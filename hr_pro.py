@@ -12,10 +12,10 @@ class Employee:
         return "Name: %s, Age: %s, Salary: %s, Working Years: %d" % (self.name, self.age, self.salary, self.get_working_years())
 
 class Manager(Employee):
-    # Manager class here
+    pass
         
 def main():
-	# main code here
+	pass
 
 if __name__ == '__main__':
 	main()
