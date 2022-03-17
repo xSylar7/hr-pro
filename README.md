@@ -1,12 +1,3 @@
-# Treehouse Prerequisites:
-
-Finish the following chapters/steps from [this course](https://teamtreehouse.com/library/objectoriented-python-2) on treehouse:
-
-- Chapter "**Instant Objects**":  All steps
-- Chapter "**Inheritance**":  Up-to and including "**Super!**"
-
----
-
 # Fork & Clone
 
 Fork and clone [this repository](https://github.com/JoinCODED/hr-pro) in your `python` directory.
