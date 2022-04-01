@@ -6,9 +6,9 @@ Fork and clone [this repository](https://github.com/JoinCODED/hr-pro) in your `p
 
 # Task 
 
-In this task you'll be creating the HR system for a company. This company has two types of employees: normal employees and managers.
+In this task, you'll be creating the HR system for a company. This company has two types of employees: non-managerial employees and managers.
 
-The following example assume the current year is 2019.
+The following example assumes the current year is 2019.
 
 ```
 Welcome to HR Pro 2019
@@ -82,7 +82,7 @@ What would you like to do? 5
 ```
 
 ## Steps:
-1. For this task you need to create two classes:
+1. In this task you need to create two classes:
     - `Employee`:
         - `name`
         - `age`
@@ -102,12 +102,12 @@ What would you like to do? 5
         - `get_bonus()`
             - `bonus_percentage` * `salary`
         - Where the `Manager` class inherits from the `Employee` class. 
-
-2. Define a list of `Employee` objects for normal employees, and a list of `Manager` objects for managers.
+<!-- wouldn't be better if we add other steps for get_employee, get_manager, add_employee, add_manager functions? -->
+2. Define a list of `Employee` objects for non-managerial employees, and a list of `Manager` objects for managers.
 3. Print the options to the HR employee (the user).
 4. If `1` was chosen, print the employees information (the employees list).
 5. If `2` was chosen, print the managers information (the managers list).
-6. If `3` was chosen, allow the HR employee to add a normal employee to the system (the employees list).
+6. If `3` was chosen, allow the HR employee to add a non-managerial employee to the system (the employees list).
 7. If `4` was chosen, allow the HR employee to add a manager to the system (the managers list).
 8. If `5` was chosen, stop the program.
 9. Push your code.
