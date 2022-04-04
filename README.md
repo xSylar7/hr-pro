@@ -102,7 +102,6 @@ What would you like to do? 5
         - `get_bonus()`
             - `bonus_percentage` * `salary`
         - Where the `Manager` class inherits from the `Employee` class. 
-<!-- wouldn't be better if we add other steps for get_employee, get_manager, add_employee, add_manager functions? -->
 2. Define a list of `Employee` objects for non-managerial employees, and a list of `Manager` objects for managers.
 3. Print the options to the HR employee (the user).
 4. If `1` was chosen, print the employees information (the employees list).
