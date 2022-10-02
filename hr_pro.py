@@ -6,7 +6,7 @@ class Employee:
          self.salary =salary
          self.employment_years = employment_years
 
-    def get_annual_salary(self,salary):
+    def get_annual_salary(self):
         return self.salary * 12
 
     def __str__(self):
@@ -22,7 +22,7 @@ class Manager(Employee):
          super().__init__(name, age, salary, employment_years)
          self.bonus_percentage = bonus_percentage
          
-    def get_bonus(self, bonus_percentage, salary):
+    def get_bonus(self):
         return self.bonus_percentage * self.salary
 
     def __str__(self):
@@ -47,8 +47,36 @@ def get_user_option():
     elif user_option == 2:
         print (manager_q[0])
     elif user_option == 3:
-        user_input = []
-        user_name = input ()
+        employee_input = Employee(input ("Enter your name"),input ("Enter your age"),input ("Enter your salary"),input ("Enter your years of experince"))
+        print (employee_input)
+
+        #----------Extreem Method but it works --------------
+        # employee_user_input = []
+        # employee_name = input ("Enter your name")
+        # employee_age = input ("Enter your age")
+        # employee_salary = input ("Enter your salary")
+        # employee_years = input ("Enter your years of experince")
+        # employee_user_input.extend([employee_name,employee_age,employee_salary,employee_years])
+        # print (employee_user_input)
+
+
+    elif user_option == 4:
+        manager_input = Manager(input ("Enter your name"),input ("Enter your age"),input ("Enter your salary"),input ("Enter your years of experince"), input ("Enter your bonus %"))
+        print (manager_input)
+
+
+
+
+        # ----------Extreem Method but it works --------------
+        # manager_user_input = []
+        # manager_name = input ("Enter your name")
+        # manager_age = input ("Enter your age")
+        # manager_salary = input ("Enter your salary")
+        # manager_years = input ("Enter your years of experince")
+        # manager_bonus = input ("Enter your bonus")
+        # manager_user_input.extend([manager_name,manager_age,manager_salary,manager_years,manager_bonus])
+        # print (manager_user_input)
+
         # input (Employee("what is your name", "whats your age", "whats your")) ---> Failed test
 
 
