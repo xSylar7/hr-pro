@@ -40,7 +40,7 @@ def show_options ():
 
 def get_user_option():
     show_options ()
-    user_option = int(input ("What Would you like to do?"))
+    user_option = int(input ("What Would you like to do? \n"))
 
     if user_option == 1:
         print (employee_1[0])
@@ -51,7 +51,7 @@ def get_user_option():
 
 
     elif user_option == 3:
-        employee_input = Employee(input ("Enter your name"),input ("Enter your age"),input ("Enter your salary"),input ("Enter your years of experince"))
+        employee_input = Employee(input ("Enter your name \n"),input ("Enter your age \n"),input ("Enter your salary \n"),input ("Enter your years of experince \n"))
         print (employee_input)
 
         #----------Extreem Method but it works --------------
@@ -65,7 +65,7 @@ def get_user_option():
 
 
     elif user_option == 4:
-        manager_input = Manager(input ("Enter your name"),input ("Enter your age"),input ("Enter your salary"),input ("Enter your years of experince"), input ("Enter your bonus %"))
+        manager_input = Manager(input ("Enter your name \n"),input ("Enter your age \n"),input ("Enter your salary \n"),input ("Enter your years of experince \n"), input ("Enter your bonus % \n"))
         print (manager_input)
 
         # ----------Extreem Method but it works --------------
