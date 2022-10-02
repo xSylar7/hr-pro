@@ -12,7 +12,7 @@ class Employee:
     def __str__(self):
          return f"Employee name is {self.name} his age {self.age} his salary {self.salary} his years of employement {self.employment_years}"
 
-employee_1 = [Employee("Mohammad", 30,2000,6)]
+employee_1 = [Employee("Ali", 30,2000,6)]
 # employee1 =  --> Test for the employee class
 # print (employee_1[0])
 
@@ -44,8 +44,12 @@ def get_user_option():
 
     if user_option == 1:
         print (employee_1[0])
+
+        
     elif user_option == 2:
         print (manager_q[0])
+
+
     elif user_option == 3:
         employee_input = Employee(input ("Enter your name"),input ("Enter your age"),input ("Enter your salary"),input ("Enter your years of experince"))
         print (employee_input)
@@ -64,9 +68,6 @@ def get_user_option():
         manager_input = Manager(input ("Enter your name"),input ("Enter your age"),input ("Enter your salary"),input ("Enter your years of experince"), input ("Enter your bonus %"))
         print (manager_input)
 
-
-
-
         # ----------Extreem Method but it works --------------
         # manager_user_input = []
         # manager_name = input ("Enter your name")
@@ -77,7 +78,8 @@ def get_user_option():
         # manager_user_input.extend([manager_name,manager_age,manager_salary,manager_years,manager_bonus])
         # print (manager_user_input)
 
-        # input (Employee("what is your name", "whats your age", "whats your")) ---> Failed test
+    else: 
+        print ("Choose a number from 1 to 4")
 
 
 get_user_option()
